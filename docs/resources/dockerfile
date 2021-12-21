@@ -1,2 +1,5 @@
 FROM nginx
-COPY /home/ansadmin/final-assignment-2/module-3-Git-And-Jenkins-assignment-1 /usr/share/nginx/html
+RUN whoami
+RUN pwd
+WORKDIR /module-3-Git-And-Jenkins-assignment-1
+COPY . /usr/share/nginx/html
